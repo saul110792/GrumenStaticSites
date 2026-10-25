@@ -8,61 +8,61 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0f1d33;--navy2:#1a2c4a;--gold:#b8955a;--gold-l:#e7d8bb;--cream:#faf7f1;--ink:#1d2433;--muted:#6a6f7c}
+:root{--char:#2b2b2e;--char2:#3d3d42;--gold:#b8955a;--gold-l:#e7d8bb;--cream:#faf7f1;--ink:#26262a;--muted:#6e6e73}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Lato,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.1}
-.top{background:var(--navy);color:var(--gold-l);font-size:.8rem;padding:8px 0}
+.top{background:var(--char);color:var(--gold-l);font-size:.8rem;padding:8px 0}
 .top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #ece4d4}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand b{font-family:"Cormorant Garamond";font-size:1.9rem;color:var(--navy);letter-spacing:3px;line-height:1}
+.brand b{font-family:"Cormorant Garamond";font-size:1.9rem;color:var(--char);letter-spacing:3px;line-height:1}
 .brand small{display:block;font-size:.58rem;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
 .menu{display:flex;gap:30px;font-size:.88rem;letter-spacing:1px;text-transform:uppercase}
 .menu a:hover{color:var(--gold)}
 .btn{display:inline-block;background:var(--gold);color:#fff;padding:14px 30px;font-weight:700;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;border:0;cursor:pointer;transition:background .2s}
 .btn:hover{background:#9e7d45}
 .btn.line{background:transparent;border:1px solid var(--gold-l);color:var(--gold-l)}
-.hero{background:radial-gradient(circle at 80% 30%,var(--navy2),var(--navy) 65%);color:#fff;text-align:center;padding:110px 0 120px}
+.hero{background:radial-gradient(circle at 80% 30%,var(--char2),var(--char) 65%);color:#fff;text-align:center;padding:110px 0 120px}
 .hero .orn{color:var(--gold);letter-spacing:6px;font-size:.8rem;text-transform:uppercase}
 .hero h1{font-size:clamp(2.6rem,6.5vw,4.4rem);margin:18px auto;max-width:800px}
 .hero h1 em{color:var(--gold);font-style:normal}
-.hero p{max-width:580px;margin:0 auto 36px;color:#cdd3de}
+.hero p{max-width:580px;margin:0 auto 36px;color:#d4d4d8}
 .hero .ctas{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
 section{padding:84px 0}
 .sh{text-align:center;margin-bottom:48px}
 .sh small{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:.75rem;font-weight:700}
-.sh h2{font-size:clamp(2rem,4.5vw,2.8rem);color:var(--navy);margin-top:6px}
+.sh h2{font-size:clamp(2rem,4.5vw,2.8rem);color:var(--char);margin-top:6px}
 .sh h2:after{content:"";display:block;width:60px;height:2px;background:var(--gold);margin:16px auto 0}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .about p{color:var(--muted);margin-bottom:16px}
 .frame{border:1px solid var(--gold);padding:14px}
-.frame div{background:var(--navy);color:#fff;padding:44px 34px}
+.frame div{background:var(--char);color:#fff;padding:44px 34px}
 .frame h3{font-size:1.8rem;color:var(--gold-l);margin-bottom:14px}
-.frame li{list-style:none;padding:8px 0;border-bottom:1px solid #2a3d5c;font-size:.95rem}
+.frame li{list-style:none;padding:8px 0;border-bottom:1px solid #45454b;font-size:.95rem}
 .frame li:last-child{border:0}
 .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.col{background:#fff;padding:36px 30px;border-top:3px solid var(--gold);box-shadow:0 4px 18px rgba(15,29,51,.05)}
-.col h3{font-size:1.6rem;color:var(--navy);margin-bottom:14px}
+.col{background:#fff;padding:36px 30px;border-top:3px solid var(--gold);box-shadow:0 4px 18px rgba(30,30,32,.05)}
+.col h3{font-size:1.6rem;color:var(--char);margin-bottom:14px}
 .col ul{list-style:none}
 .col li{padding:7px 0;font-size:.94rem;color:var(--muted);border-bottom:1px dashed #e6dfd0}
 .col li:before{content:"✦ ";color:var(--gold);font-size:.75rem}
-.quote{background:var(--navy);color:#fff;text-align:center}
+.quote{background:var(--char);color:#fff;text-align:center}
 .quote .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:10px}
 .quote .g h3{font-size:1.4rem;color:var(--gold-l);margin-bottom:6px}
-.quote .g p{font-size:.9rem;color:#b9c1cf}
+.quote .g p{font-size:.9rem;color:#bfbfc5}
 .contact .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:50px}
-.contact h3{font-size:1.4rem;color:var(--navy);margin-bottom:4px}
+.contact h3{font-size:1.4rem;color:var(--char);margin-bottom:4px}
 .contact .blk{margin-bottom:24px;color:var(--muted)}
 .contact .blk a{color:var(--gold);font-weight:700}
 form{display:grid;gap:14px}
 input,textarea{width:100%;padding:14px;border:1px solid #ddd3c0;background:#fff;font:inherit}
 input:focus,textarea:focus{outline:1px solid var(--gold)}
-footer{background:#0a1424;color:#8c96a8;text-align:center;font-size:.83rem;padding:28px 0}
+footer{background:#1c1c1e;color:#9a9aa0;text-align:center;font-size:.83rem;padding:28px 0}
 footer b{color:var(--gold-l);letter-spacing:3px;font-family:"Cormorant Garamond";font-size:1.2rem;display:block;margin-bottom:4px}
 @media(max-width:860px){.menu{display:none}.about,.contact .wrap{grid-template-columns:1fr}.cols{grid-template-columns:1fr}.quote .grid{grid-template-columns:1fr 1fr}section{padding:62px 0}.hero{padding:80px 0 90px}}
 </style>
@@ -75,7 +75,7 @@ footer b{color:var(--gold-l);letter-spacing:3px;font-family:"Cormorant Garamond"
   <div class="wrap nav">
     <a href="#inicio" class="brand">
       <!-- Reemplaza por el logo oficial: <img src="logo-gioana.png" height="52"> -->
-      <svg width="42" height="42" viewBox="0 0 50 50"><circle cx="25" cy="25" r="22" fill="none" stroke="#b8955a" stroke-width="2"/><circle cx="25" cy="25" r="17" fill="#0f1d33"/><text x="25" y="32" text-anchor="middle" font-family="Georgia" font-size="20" font-weight="700" fill="#e7d8bb">G</text></svg>
+      <svg width="42" height="42" viewBox="0 0 50 50"><circle cx="25" cy="25" r="22" fill="none" stroke="#b8955a" stroke-width="2"/><circle cx="25" cy="25" r="17" fill="#2b2b2e"/><text x="25" y="32" text-anchor="middle" font-family="Georgia" font-size="20" font-weight="700" fill="#e7d8bb">G</text></svg>
       <div><b>GIOANA</b><small>Equipamiento personal &amp; uniformes</small></div>
     </a>
     <nav class="menu"><a href="#nosotros">Nosotros</a><a href="#lineas">Líneas</a><a href="#contacto">Contacto</a></nav>

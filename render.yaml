@@ -1,0 +1,29 @@
+# Blueprint de Render: crea 3 Static Sites desde este mismo repo.
+# En Render: New > Blueprint > conectar este repo > Apply.
+services:
+  - type: web
+    name: grupo-solido
+    runtime: static
+    buildCommand: echo "sitio estatico, sin build"
+    staticPublishPath: ./grupo-solido
+    buildFilter:
+      paths:
+        - grupo-solido/**
+
+  - type: web
+    name: sistemtec
+    runtime: static
+    buildCommand: echo "sitio estatico, sin build"
+    staticPublishPath: ./sistemtec
+    buildFilter:
+      paths:
+        - sistemtec/**
+
+  - type: web
+    name: gioana
+    runtime: static
+    buildCommand: echo "sitio estatico, sin build"
+    staticPublishPath: ./gioana
+    buildFilter:
+      paths:
+        - gioana/**

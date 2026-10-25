@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sistemtec | Comercializadora de uniformes y equipo</title>
+<meta name="description" content="Sistemtec: suministro de uniformes operativos, ropa ejecutiva, calzado y equipo de seguridad para empresas e instituciones.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1b3a8f;--blue-d:#0f2463;--orange:#f26a1b;--gray:#f4f6fa;--ink:#18213a;--muted:#5f6884}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Open Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Montserrat,sans-serif;line-height:1.15}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 1px 0 #e3e7ef}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Montserrat;font-weight:800;font-size:1.45rem;color:var(--blue);letter-spacing:1px}
+.menu{display:flex;gap:28px;font-weight:600;font-size:.92rem;color:var(--muted)}
+.menu a:hover{color:var(--orange)}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:13px 28px;border-radius:30px;font-weight:700;font-family:Montserrat;font-size:.9rem;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:#d9570c}
+.btn.alt{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+.hero{padding:80px 0;background:linear-gradient(180deg,#fff 0%,var(--gray) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:#ffe9db;color:var(--orange);font-weight:700;font-size:.78rem;padding:6px 14px;border-radius:20px;margin-bottom:18px;letter-spacing:.5px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);color:var(--blue-d);font-weight:800}
+.hero h1 span{color:var(--orange)}
+.hero p{margin:20px 0 32px;color:var(--muted);font-size:1.08rem;max-width:520px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.visual{position:relative;aspect-ratio:1;max-width:400px;justify-self:center;width:100%}
+.visual .c1{position:absolute;inset:0;border-radius:50%;background:var(--blue)}
+.visual .c2{position:absolute;width:45%;height:45%;right:-4%;top:-4%;border-radius:50%;background:var(--orange)}
+.visual ul{position:absolute;inset:18%;list-style:none;color:#fff;display:flex;flex-direction:column;justify-content:center;gap:12px;font-family:Montserrat;font-weight:700}
+.visual li:before{content:"→ ";color:var(--orange)}
+section{padding:80px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 44px}
+.head small{color:var(--orange);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+.head h2{font-size:clamp(1.8rem,4vw,2.4rem);color:var(--blue-d);margin:8px 0 12px}
+.head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{border:1px solid #e3e7ef;border-radius:14px;padding:28px;transition:box-shadow .2s,border-color .2s}
+.card:hover{border-color:var(--orange);box-shadow:0 10px 28px rgba(27,58,143,.1)}
+.num{font-family:Montserrat;font-weight:800;font-size:.85rem;color:var(--orange);margin-bottom:10px}
+.card h3{font-size:1.12rem;color:var(--blue-d);margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--muted)}
+.band{background:var(--blue);color:#fff}
+.band .head h2{color:#fff}.band .head p{color:#c8d3f2}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:var(--blue-d);border-radius:12px;padding:26px 22px}
+.step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--orange);font-family:Montserrat;font-weight:800;margin-bottom:14px}
+.step h3{font-size:1.02rem;margin-bottom:6px}
+.step p{font-size:.88rem;color:#c8d3f2}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:48px}
+.contact h2{font-size:2.2rem;color:var(--blue-d);margin-bottom:14px}
+.contact p.muted{color:var(--muted);margin-bottom:28px}
+.line{display:flex;gap:14px;margin-bottom:18px}
+.line i{flex:none;width:40px;height:40px;border-radius:50%;background:#ffe9db;color:var(--orange);display:grid;place-items:center;font-style:normal;font-weight:800}
+.line b{display:block;font-family:Montserrat;font-size:.85rem;color:var(--blue-d)}
+form{background:var(--gray);padding:30px;border-radius:16px;display:grid;gap:12px}
+input,textarea{width:100%;padding:13px 16px;border:1px solid #d7dce8;border-radius:10px;font:inherit;background:#fff}
+input:focus,textarea:focus{outline:2px solid var(--orange);border-color:transparent}
+footer{background:var(--blue-d);color:#a9b6dc;text-align:center;padding:26px 0;font-size:.85rem}
+@media(max-width:860px){.menu{display:none}.hero .wrap,.contact .wrap{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.visual{max-width:280px}section{padding:60px 0}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="brand">
+      <!-- Reemplaza por el logo oficial: <img src="logo-sistemtec.png" height="42"> -->
+      <svg width="34" height="34" viewBox="0 0 40 40"><path d="M6 30 L20 10 L34 30" fill="none" stroke="#1b3a8f" stroke-width="5" stroke-linecap="round"/><path d="M14 30 L26 14" stroke="#f26a1b" stroke-width="5" stroke-linecap="round"/></svg>
+      SISTEMTEC
+    </a>
+    <nav class="menu"><a href="#productos">Productos</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+    <a href="#contacto" class="btn" style="padding:10px 20px">Cotizar</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="tag">COMERCIALIZADORA · CDMX</span>
+      <h1>Equipamos a su personal <span>de pies a cabeza</span></h1>
+      <p>Uniformes operativos, ropa ejecutiva, calzado y equipo de seguridad para empresas e instituciones, con atención directa y muestras para validación.</p>
+      <div class="ctas"><a href="#contacto" class="btn">Solicitar cotización</a><a href="#productos" class="btn alt">Ver catálogo</a></div>
+    </div>
+    <div class="visual"><div class="c1"></div><div class="c2"></div>
+      <ul><li>Uniforme táctico</li><li>Ropa ejecutiva</li><li>Calzado de piel</li><li>Personalización</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="productos">
+  <div class="wrap">
+    <div class="head"><small>Catálogo</small><h2>Lo que suministramos</h2><p>Partidas completas para áreas operativas, administrativas y de seguridad.</p></div>
+    <div class="grid">
+      <div class="card"><div class="num">01</div><h3>Pantalón de cargo</h3><p>Color negro o kaki, resistente para uso diario operativo.</p></div>
+      <div class="card"><div class="num">02</div><h3>Camisola táctica</h3><p>Personalizada en negro o blanco con bordado institucional.</p></div>
+      <div class="card"><div class="num">03</div><h3>Polo y gorra</h3><p>Playera tipo polo y gorra negra con su logotipo.</p></div>
+      <div class="card"><div class="num">04</div><h3>Botas de piel</h3><p>Calzado negro de protección para personal de campo.</p></div>
+      <div class="card"><div class="num">05</div><h3>Línea ejecutiva</h3><p>Trajes gris Oxford para caballero y dama, camisas, blusas, corbatas y corbatines.</p></div>
+      <div class="card"><div class="num">06</div><h3>Rompevientos</h3><p>Chamarras ligeras color negro para exteriores.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="proceso">
+  <div class="wrap">
+    <div class="head"><small>Proceso</small><h2>Cómo trabajamos</h2><p>Un proceso claro desde la solicitud hasta la entrega.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Requerimiento</h3><p>Nos comparte especificaciones, tallas y cantidades.</p></div>
+      <div class="step"><h3>Muestras</h3><p>Entregamos muestras físicas con remisión firmada.</p></div>
+      <div class="step"><h3>Producción</h3><p>Fabricamos y personalizamos según lo aprobado.</p></div>
+      <div class="step"><h3>Entrega</h3><p>Entregamos con documentación completa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <h2>Hablemos de su proyecto</h2>
+      <p class="muted">Atendemos solicitudes de empresas privadas e instituciones públicas.</p>
+      <div class="line"><i>⌖</i><div><b>Dirección</b>Calle Pascle 48-A, Pedregal de Santo Domingo, Coyoacán, CDMX, C.P. 04369</div></div>
+      <div class="line"><i>☎</i><div><b>Teléfono</b><!-- TODO --> (55) 0000 0000</div></div>
+      <div class="line"><i>@</i><div><b>Correo</b><!-- TODO --> ventas@sistemtec.mx</div></div>
+      <div class="line"><i>◎</i><div><b>Atención comercial</b>Alfredo Arrieta Aguilar, Director comercial</div></div>
+    </div>
+    <form onsubmit="event.preventDefault();var f=this;location.href='mailto:ventas@sistemtec.mx?subject='+encodeURIComponent('Cotización - '+f.empresa.value)+'&body='+encodeURIComponent('Nombre: '+f.nombre.value+'\nTeléfono: '+f.tel.value+'\n\n'+f.msg.value)">
+      <input name="nombre" placeholder="Nombre completo" required>
+      <input name="empresa" placeholder="Empresa o institución">
+      <input name="tel" type="tel" placeholder="Teléfono">
+      <textarea name="msg" rows="5" placeholder="Describa las prendas y cantidades que necesita" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<footer>© <span id="y"></span> Sistemtec · Ciudad de México</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
